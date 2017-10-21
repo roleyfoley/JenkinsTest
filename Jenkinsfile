@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'microsoft/dotnet-samples'
-    }
-    
-  }
+  agent any
   stages {
     stage('build') {
       steps {
