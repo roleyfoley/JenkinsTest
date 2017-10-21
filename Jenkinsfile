@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello World'
       }
     }
+    stage('stuff') {
+      steps {
+        powershell(script: 'Get-Date', returnStdout: true)
+      }
+    }
   }
 }
